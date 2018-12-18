@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #262626
+}
+@keyframes example {
+    100% {left: 40%; color: #262626; transform: scale(1);}
+    80% {left: 50%; color: #fff;  transform: scale(0.8);}
+    60% {left: 40%;color: #262626; transform: scale(0.8);}
+    40% {left: 50%; color: #fff; transform: scale(1);}
+    20% {left: 40%;color: #262626; transform: scale(1);}
+    0% {left: 50%; color: #fff; transform: scale(0.8);}
+    
+       
+}
+span{
+    font-size: 3em;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    animation: animate 1.6s ease-in-out infinite;
+}
+@keyframes animate{
+    0%, 40%, 100% {
+        opacity: 1;
+        transform: scale(0.2);
+    }
+    20% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+ul li:nth-child(1) {
+    animation-delay: -1.4s;
+    background: #00ffb3;
+    box-shadow: 0 0 50px #00ffb3;
+}
+ul li:nth-child(2) {
+    animation-delay: -1.2s;
+    background: #006eff;
+    box-shadow: 0 0 50px #006eff;
+}
+ul li:nth-child(3) {
+    animation-delay: -1s;
+    background: #0011ff;
+    box-shadow: 0 0 50px #0011ff;
+}
+ul li:nth-child(4) {
+    animation-delay: -0.8s;
+    background: #0003a1;
+    box-shadow: 0 0 50px #0003a1;
+}
+ul li:nth-child(5) {
+    animation-delay: -0.6s;
+    background: #3700ff;
+    box-shadow: 0 0 50px #3700ff;
+}
+ul li:nth-child(6) {
+    animation-delay: -0.4s;
+    background: #4400ff;
+    box-shadow: 0 0 50px #4400ff;
+}
+ul li:nth-child(7) {
+    animation-delay: -0.2s;
+    background: #6f00ff;
+    box-shadow: 0 0 50px #6f00ff;
+}
